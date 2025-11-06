@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Klinik</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Login Page -->
+    <div id="loginPage" class="login-container">
+        <div class="login-box">
+            <h1 class="login-title">Sistem Klinik</h1>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" class="form-control" required 
+                           value="admin">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" class="form-control" required
+                           value="admin123">
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Login</button>
+            </form>
+            <div style="margin-top: 1rem; text-align: center; color: #666; font-size: 0.9rem;">
+                <strong>Demo Account:</strong><br>
+                Username: admin / Password: admin123
+            </div>
+        </div>
+    </div>
+
+    <!-- Main App -->
+    <div id="mainApp" style="display: none;">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <nav class="navbar">
+                    <div class="logo">Sistem Klinik</div>
+                    <button class="menu-toggle">☰</button>
+                    <ul class="nav-menu">
+                        <li><a href="#" class="nav-link active" data-section="dashboard">Dashboard</a></li>
+                        <li><a href="#" class="nav-link" data-section="poli">Poli</a></li>
+                        <li><a href="#" class="nav-link" data-section="dokter">Dokter</a></li>
+                        <li><a href="#" class="nav-link" data-section="pasien">Pasien</a></li>
+                        <li><a href="#" class="nav-link" data-section="pendaftaran">Pendaftaran</a></li>
+                        <li><a href="#" class="nav-link" data-section="rekam_medis">Rekam Medis</a></li>
+                        <li><a href="#" class="nav-link" data-section="obat">Obat</a></li>
+                        <li><a href="#" class="nav-link" data-section="pembayaran">Pembayaran</a></li>
+                        <li><a href="#" class="nav-link logout-btn">Logout</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="container">
+                <div id="mainContent">
+                    <!-- Content will be loaded here by JavaScript -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
